@@ -7,9 +7,9 @@ type OrderType =
     Limit | Market
 
 type Order(Security : string, Side : OrderSide, Type : OrderType, Qty : int, LimitPrice : decimal, CounterpartyName : string)   =
-    let security = Security
-    let side = Side
-    let orderType = Type
-    let quantity = Qty
-    let limitPrice = LimitPrice
-    let counterPartyName = CounterpartyName 
+    member this.security = Security
+    member this.side = Side
+    member this.orderType = Type
+    member this.quantity = Qty
+    member this.limitPrice = LimitPrice
+    member this.counterPartyName = CounterpartyName 
