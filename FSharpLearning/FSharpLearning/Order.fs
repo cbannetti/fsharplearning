@@ -11,6 +11,5 @@ type Order(Security : string, Side : OrderSide, Type : OrderType, Qty : int, Lim
     let side = Side
     let orderType = Type
     let quantity = Qty
-    let limitprice = LimitPrice
-    let counterpartyName = CounterpartyName
-
+    let limitPrice = LimitPrice
+    let counterPartyName = CounterpartyName 
